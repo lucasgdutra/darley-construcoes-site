@@ -1,0 +1,158 @@
+---
+import "@fontsource/roboto";
+import { SEO } from "astro-seo";
+import { Schema } from "astro-seo-schema";
+---
+
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <SEO
+      title="Darley Construções"
+      description="A Darley Construções é uma empresa da área de construção cível que atua em Uberlândia e região. Trabalhamos com construções e reformas industriais, comerciais e industriais."
+      canonical="https://darleyconstrucoes.com.br/"
+      charset="UTF-8"
+      openGraph={{
+        basic: {
+          title: "Darley Construções",
+          url: "https://darleyconstrucoes.com.br",
+          type: "website",
+          image: "https://darleyconstrucoes.com.br/img/icone.png",
+        },
+        optional: {
+          description:
+            "A Darley Construções é uma empresa da área de construção cível que atua em Uberlândia e região. Trabalhamos com construções e reformas industriais, comerciais e industriais.",
+          siteName: "Darley Construções",
+          locale: "pt_BR",
+        },
+      }}
+      ,
+      extend={{
+        link: [
+          {
+            rel: "sitemap",
+            href: "/sitemap-index.xml",
+          },
+        ],
+        meta: [
+          {
+            name: "keywords",
+            content:
+              "construções, reformas, engenharia, arquiterura, fresadora, piso, asfalto, Uberlândia, triângulo, mineiro, comerciais, industriais, residênciais",
+          },
+          {
+            name: "description",
+            content:
+              "A Darley Construções é uma empresa da área de construção cível que atua em Uberlândia e região.Trabalhamos com construções e reformas industriais, comerciais e industriais.",
+          },
+          {
+            name: "viewport",
+            content:
+              "width=device-width, initial-scale=1, maximum-scale=5, minimum-scale=1",
+          },
+          {
+            name: "author",
+            content: "Dipolo",
+          },
+
+          {
+            name: "color-scheme",
+            content: "light",
+          },
+          {
+            httpEquiv: "Content-Type",
+            content: "text/html;charset=UTF-8",
+          },
+          {
+            httpEquiv: "X-UA-Compatible",
+            content: "IE=edge",
+          },
+          {
+            httpEquiv: "Content-Type",
+            content: "text/html;charset=UTF-8",
+          },
+        ],
+      }}
+    />
+    <Schema
+      item={{
+        "@context": "https://schema.org",
+        "@type": "LocalBusiness",
+        name: "Darley Construções",
+        image: "https://darleyconstrucoes.com.br/img/LogoMarca_verdebranco.svg",
+        description:
+          "A Darley Construções é uma empresa da área de construção cível que atua em Uberlândia e região. Trabalhamos com construções e reformas industriais, comerciais e industriais.",
+        url: "https://darleyconstrucoes.com.br/",
+        sameAs: [
+          "https://fb.me/darleyconstrucoes",
+          "https://www.instagram.com/darleyconstrucoes",
+          "https://twitter.com/darleyconst",
+        ],
+        telephone: "+55 (34) 9 8817-2669",
+        email: "contato@darleyconstrucoes.com.br",
+        address: {
+          "@type": "PostalAddress",
+          addressLocality: "Uberlândia",
+        },
+        openingHours: "Mo,Tu,We,Th,Fr 08:00-18:00",
+      }}
+    />
+    <meta name="generator" content={Astro.generator} />
+
+    <script type="text/partytown">
+      window.dataLayer = window.dataLayer || [];
+
+      window.gtag = function () {
+        window.dataLayer.push(arguments);
+      }
+
+      window.gtag("consent", "default", {
+        ad_storage: "denied",
+
+        analytics_storage: "denied",
+
+        functionality_storage: "denied",
+
+        personalization_storage: "denied",
+
+        security_storage: "granted",
+
+        wait_for_update: 2000,
+      });
+
+      window.gtag("set", "ads_data_redaction", true);
+      window.gtag("set", "url_passthrough", true);
+    </script>
+    <script
+      async
+      defer
+      fetchpriority="low"
+      src="https://www.googletagmanager.com/gtag/js?id=G-15PPL0QD4X"
+      type="text/partytown"></script>
+    <script
+      type="text/partytown"
+      async
+      defer
+      fetchpriority="low"
+      src="https://www.googletagmanager.com/gtag/js?id=AW-11274356313"></script>
+    <script type="text/partytown">
+      window.dataLayer = window.dataLayer || [];
+      window.gtag = function () {
+        window.dataLayer.push(arguments);
+      };
+      window.gtag("js", new Date());
+
+      window.gtag("config", "G-15PPL0QD4X");
+
+      window.gtag("config", "AW-11274356313");
+    </script>
+    <script
+      id="cookieyes"
+      type="text/javascript"
+      src="https://cdn-cookieyes.com/client_data/60f3ef50a886b1b0318fe5cb/script.js"
+    ></script>
+  </head>
+  <body>
+    <slot />
+  </body>
+</html>

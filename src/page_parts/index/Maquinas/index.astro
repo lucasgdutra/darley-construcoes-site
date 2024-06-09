@@ -1,0 +1,50 @@
+---
+import FresadoraCarousel from "./Fresadora_Carousel";
+import Section from "../../../components/section.astro";
+import { twMerge } from "tailwind-merge";
+
+export interface Props {
+    id?: astroHTML.JSX.HTMLAttributes["id"];
+    class?: astroHTML.JSX.HTMLAttributes["class"];
+}
+
+const { class: className, ...rest } = Astro.props;
+---
+
+<Section
+    {...rest}
+    class={twMerge(
+        "px-6 md:px-12 lg:px-24 xl:px-48",
+        className
+    )}
+>
+    <h2
+        class="font-semibold leading-tight text-4xl my-8 border-t-4 border-green-500"
+    >
+        Máquinas
+    </h2>
+    <div class="flex flex-wrap -mx-4">
+        <div class="w-full sm:w-1/2 px-4">
+            <p class="mb-4">
+                Contamos com uma fresadora de pisos entre nossas máquinas,
+                possibilitando trabalho de fresa especializado em pisos e
+                asfalto.
+            </p>
+        </div>
+        <div class="w-full sm:w-1/2 px-4">
+            <h3 class="font-semibold leading-tight text-2xl mb-8 text-center">
+                Fresadora de pisos
+            </h3>
+
+            <FresadoraCarousel client:visible />
+
+            <a
+                href="http://www.finiti.com.br/fresadora-de-piso-fr/"
+                target="_blank"
+                rel="noopener"
+                class="btn py-0 px-6 text-center block w-full bg-green-500 hover:bg-green-600 text-white rounded-md mt-4"
+                >Informações da fresadora</a
+            >
+        </div>
+    </div>
+</Section>

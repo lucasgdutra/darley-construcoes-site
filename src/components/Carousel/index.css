@@ -1,0 +1,6 @@
+:root {
+  --swiper-navigation-color: theme("colors.green[500]");
+  --swiper-pagination-color: theme("colors.green[500]");
+  --swiper-theme-color: theme("colors.green[500]");
+  --swiper-preloader-color: theme("colors.green[500]");
+}

@@ -1,0 +1,37 @@
+---
+import Section from "../../../components/section.astro";
+import Clientes_Carousel from "./Clientes_Carousel";
+
+import { twMerge } from "tailwind-merge";
+
+export interface Props {
+    id?: astroHTML.JSX.HTMLAttributes["id"];
+    class?: astroHTML.JSX.HTMLAttributes["class"];
+}
+
+const { class: className, ...rest } = Astro.props;
+---
+
+<Section
+    {...rest}
+    class={twMerge("px-6 md:px-12 lg:px-24 xl:px-48", className)}
+>
+    <h2
+        class="font-semibold leading-tight text-4xl my-8 border-t-4 border-green-500"
+    >
+        Clientes
+    </h2>
+    <div class="flex flex-col gap-3">
+        <div class="w-full">
+            <p>
+                Nós trabalhamos com qualidade e respeito, buscando oferecer
+                confiabilidade para que nossos clientes de hoje sejam nossos
+                parceiros de amanhã e sempre
+            </p>
+        </div>
+        <div class="w-full">
+            <p class="text-center">Conheça alguns de nossos clientes</p>
+            <Clientes_Carousel client:visible />
+        </div>
+    </div>
+</Section>

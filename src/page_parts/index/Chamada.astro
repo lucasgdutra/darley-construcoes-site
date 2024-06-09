@@ -1,0 +1,85 @@
+---
+import { twMerge } from "tailwind-merge";
+
+import { getImage } from "astro:assets";
+import Capa from "../../assets/capa.jpg";
+
+export interface Props {
+    id?: astroHTML.JSX.HTMLAttributes["id"];
+    class?: astroHTML.JSX.HTMLAttributes["class"];
+}
+
+const { class: className, ...rest } = Astro.props;
+
+let { src: optimizedCapaXl } = await getImage({ src: Capa.src, width: 1920 });
+let { src: optimizedCapaLg } = await getImage({ src: Capa.src, width: 1280 });
+let { src: optimizedCapaMd } = await getImage({ src: Capa.src, width: 640 });
+let { src: optimizedCapaSm } = await getImage({ src: Capa.src, width: 320 });
+
+const backgroundImage = `url("${optimizedCapaLg}")`;
+const backgroundImageMd = `url("${optimizedCapaLg}")`;
+const backgroundImageLg = `url("${optimizedCapaLg}")`;
+const backgroundImageXl = `url("${optimizedCapaXl}")`;
+
+
+---
+
+<>
+    <section
+        class={twMerge(
+            "min-h-screen pt-14 mt-0 w-full h-full mx-auto px-6 md:px-12 lg:px-24 xl:px-48 text-white",
+            className
+        )}
+        {...rest}
+    >
+        <h1 class="text-white text-4xl mb-2.5">
+            Pensou qualidade, pensou Darley Construções
+        </h1>
+        <p class="text-white h-23 leading-6 mb-2.5 w-162.5 overflow-auto">
+            A Darley Construções é uma empresa da área de construção cível que
+            atua em Uberlândia e região. Trabalhamos com construções e reformas
+            industriais, comerciais e industriais. Possuimos máquinario próprio,
+            profissionais capacitados e prezamos pela qualidade sempre.
+        </p>
+
+        <a
+            href="#serviços"
+            class="bg-transparent border-4 border-gray-100 rounded-md box-border text-white cursor-pointer block font-semibold h-12 leading-6 mb-6 px-4 py-2.5 text-center no-underline select-none w-160"
+        >
+            Veja os nossos projetos
+        </a>
+    </section>
+</>
+
+<style
+    define:vars={{
+        backgroundImage,
+        backgroundImageMd,
+        backgroundImageLg,
+        backgroundImageXl,
+    }}
+>
+    section {
+        background-image: var(--backgroundImage);
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-position: center center;
+        -moz-background-size: cover;
+        background-size: cover;
+    }
+    @media (min-width: 640px) {
+        section {
+            background-image: var(--backgroundImageMd);
+        }
+    }
+    @media (min-width: 1280px) {
+        section {
+            background-image: var(--backgroundImageLg);
+        }
+    }
+    @media (min-width: 1920px) {
+        section {
+            background-image: var(--backgroundImageXl);
+        }
+    }
+</style>

@@ -1,0 +1,23 @@
+---
+import Section from "../../components/section.astro";
+
+import { twMerge } from "tailwind-merge";
+
+export interface Props {
+    id?: astroHTML.JSX.HTMLAttributes["id"];
+    class?: astroHTML.JSX.HTMLAttributes["class"];
+}
+
+const { class: className, ...rest } = Astro.props;
+---
+
+<Section
+    {...rest}
+    class={twMerge("px-6 md:px-12 lg:px-24 xl:px-48", className)}
+>
+    <h2
+        class="font-semibold leading-tight text-4xl mb-8 border-t-4 border-green-500"
+    >
+        Depoimentos
+    </h2>
+</Section>

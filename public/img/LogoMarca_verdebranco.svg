@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   version="1.1"
+   width="300"
+   height="54"
+   id="svg3774"
+   viewBox="0 0 299.99999 54.000002"
+   sodipodi:docname="LogoMarca_verdebranco.svg"
+   inkscape:version="0.92.2 (5c3e80d, 2017-08-06)"
+   inkscape:export-filename="C:\Users\Marcos Antenor\Desktop\logo-sem-elipse-cinza.png"
+   inkscape:export-xdpi="90"
+   inkscape:export-ydpi="90">
+  <metadata
+     id="metadata3780">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <defs
+     id="defs3778" />
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1920"
+     inkscape:window-height="1027"
+     id="namedview3776"
+     showgrid="false"
+     inkscape:zoom="2.8284271"
+     inkscape:cx="148.95703"
+     inkscape:cy="-8.1950048"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg3774"
+     units="px"
+     inkscape:snap-perpendicular="true"
+     inkscape:snap-tangential="true" />
+  <text
+     style="font-variant:normal;font-weight:normal;line-height:0%;font-family:Rockwell;-inkscape-font-specification:Rockwell;writing-mode:lr-tb;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:#ffffff;stroke-width:0.28799999;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:22.92558479;stroke-dasharray:none;stroke-opacity:1"
+     id="text3808-7"
+     x="386.12115"
+     y="417.15027">
+    <tspan
+       x="386.12115 476.84607 564.90112"
+       y="417.15027"
+       sodipodi:role="line"
+       id="tspan3804-9"
+       style="font-size:126.15332794px;line-height:1.25;stroke-width:0.28799999">DAR</tspan>
+    <tspan
+       x="641.11798 706.84381 785.68964"
+       y="417.15027"
+       sodipodi:role="line"
+       id="tspan3806-5"
+       style="font-size:126.15332794px;line-height:1.25;stroke-width:0.28799999">LEY</tspan>
+  </text>
+  <text
+     style="font-variant:normal;font-weight:normal;font-size:9.99066639px;line-height:0%;font-family:Rockwell;-inkscape-font-specification:Rockwell;writing-mode:lr-tb;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:#ffffff;stroke-width:0.18003245;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:22.92558479;stroke-dasharray:none;stroke-opacity:1;"
+     id="text3808-0"
+     x="-1.2549076"
+     y="53.635929"
+     inkscape:export-xdpi="90"
+     inkscape:export-ydpi="90"
+     transform="scale(0.9993838,1.0006166)">
+    <tspan
+       x="158.14684 199.23291 248.52043"
+       y="53.635929"
+       sodipodi:role="line"
+       id="tspan3806-4"
+       style="font-size:78.86004639px;line-height:1.25;fill:#ffffff;fill-opacity:1;stroke-width:0.18003245;stroke:#ffffff;stroke-opacity:1;">LEY</tspan>
+  </text>
+  <text
+     style="font-variant:normal;font-weight:normal;font-size:9.99066639px;line-height:0%;font-family:Rockwell;-inkscape-font-specification:Rockwell;writing-mode:lr-tb;fill:#008000;fill-opacity:1;fill-rule:nonzero;stroke:#008000;stroke-width:0.18003245;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:22.92558479;stroke-dasharray:none;stroke-opacity:1;"
+     id="text3808-0-2"
+     x="-0.93510878"
+     y="53.797901"
+     inkscape:export-xdpi="90"
+     inkscape:export-ydpi="90"
+     transform="scale(0.9993838,1.0006166)">
+    <tspan
+       sodipodi:role="line"
+       id="tspan3806-4-9"
+       style="font-size:78.86004639px;line-height:1.25;fill:#008000;fill-opacity:1;stroke-width:0.18003245;stroke:#008000;stroke-opacity:1;"
+       x="-0.93510878"
+       y="53.797901">DAR</tspan>
+  </text>
+</svg>

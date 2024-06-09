@@ -1,0 +1,67 @@
+---
+import Section from "../../components/section.astro";
+import WppIcon from "/img/marcas/wpp.svg?raw";
+import InstragramIcon from "/img/marcas/instagram.svg?raw";
+import EmailIcon from "/img/marcas/mail.svg?raw";
+
+import { twMerge } from "tailwind-merge";
+
+export interface Props {
+    id?: astroHTML.JSX.HTMLAttributes["id"];
+    class?: astroHTML.JSX.HTMLAttributes["class"];
+}
+
+const { class: className, ...rest } = Astro.props;
+---
+
+<Section
+    {...rest}
+    class={twMerge("px-6 md:px-12 lg:px-24 xl:px-48", className)}
+>
+    <h2 class="font-semibold leading-tight text-4xl mb-8 border-t-4 border-green-500">
+        Contato
+    </h2>
+    <div class="flex flex-wrap">
+        <div class="w-full">
+            <p class="mb-2">
+                Se você gostou do nosso trabalho, entre em contato via dados
+                abaixo
+            </p>
+            <ul class="flex flex-wrap list-none p-0 flex-col">
+                <li class="mr-4">
+                    <a
+                        href="mailto:contato@darleyconstrucoes.com.br?body=Olá Darley, tudo bem? Vim do seu site"
+                        target="_blank"
+                        rel="noopener"
+                        class="flex gap-2 items-center"
+                    >
+                        <Fragment set:html={EmailIcon} />
+                        Email: contato@darleyconstrucoes.com.br
+                    </a>
+                </li>
+                <li class="mr-4">
+                    <a
+                        href="https://www.instagram.com/darleyconstrucoes/"
+                        target="_blank"
+                        rel="noopener"
+                        class="flex gap-2 items-center"
+                    >
+                        <Fragment set:html={InstragramIcon} />
+                        Instagram @darleyconstrucoes
+                    </a>
+                </li>
+                <li>
+                    <a
+                        href="https://api.whatsapp.com/send?phone=5534988172669&text=Ol%C3%A1%20Darley,%20tudo%20bem%3F%20Vim%20do%20seu%20Site..."
+                        target="_blank"
+                        rel="noopener"
+                        class="flex gap-2 items-center"
+                    >
+                        <Fragment set:html={WppIcon} />
+                        WhatsApp +55 (34) 9 8817-2669
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</Section>

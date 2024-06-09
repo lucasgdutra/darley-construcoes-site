@@ -1,0 +1,15 @@
+---
+import { twMerge } from "tailwind-merge";
+
+export interface Props extends astroHTML.JSX.HTMLAttributes {}
+
+const { class: className, style, ...rest }: Props = Astro.props;
+---
+
+<section
+    class={twMerge(" min-h-screen mt-14 pt-14", className)}
+    style={style}
+    {...rest}
+>
+    <slot />
+</section>

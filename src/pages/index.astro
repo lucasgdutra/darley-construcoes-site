@@ -1,15 +1,28 @@
 ---
+import Layout from "../layout/index.astro";
+import Navbar from "../components/navbar";
+
+import Chamada from "../page_parts/index/Chamada.astro";
+import Maquinas from "../page_parts/index/Maquinas/index.astro";
+import Servicos from "../page_parts/index/Servicos/index.astro";
+// import Depoimentos from '../page_parts/index/Depoimentos.astro'
+import Clientes from "../page_parts/index/Clientes/index.astro";
+import Contato from "../page_parts/index/Contato.astro";
+
+const sections = ["inicio", "serviços", "máquinas", "clientes", "contato"];
+
+
+
 ---
 
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-		<h1>Astro</h1>
-	</body>
-</html>
+<Layout>
+	<Navbar sections={sections} client:load />
+	<main class="snap-y h-screen overflow-y-scroll">
+		<Chamada id="inicio" class="snap-start" />
+		<Servicos id="serviços" class="snap-start" />
+		<Maquinas id="máquinas" class="snap-start" />
+		<Clientes id="clientes" class="snap-start" />
+		<!-- <Depoimentos id="depoimentos"/> -->
+		<Contato id="contato" class="snap-start" />
+	</main>
+</Layout>

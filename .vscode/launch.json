@@ -1,6 +1,13 @@
 {
   "version": "0.2.0",
   "configurations": [
+  {
+    "name": "Attach to Edge",
+    "port": 3000,
+    "request": "attach",
+    "type": "msedge",
+    "webRoot": "${workspaceFolder}"
+  },
     {
       "command": "./node_modules/.bin/astro dev",
       "name": "Development server",
